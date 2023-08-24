@@ -1,1 +1,16 @@
 Run the python program "term_project" 
+
+For my term project I looked at data from shark attacks. I gathered my data from the global shark attack 
+ﬁle from  https://www.sharkattackﬁle.net/incidentlog.htm. I wanted to predict/classify if an unprovoked 
+attack would be fatal or not with respect to features such as the country, species of shark, activity being 
+performed, age of the person aDacked, and sex (M/F) of the person aDacked. The classiﬁers I looked at 
+were logistic regression, naive Bayesian, decision tree, random forest, and kNN. I also looked at Random 
+forests with just features like the country of the attack, species of shark, and activity being performed. 
+The data cleaning that I performed included making some assumptions and ﬁltering the data. What I 
+have taken away from this project is to stay out of the water, and to not take up surﬁng.  
+
+Random Forest with all of the features was the most accurate at 86.6% followed by Random Forest with 
+Age and Sex features dropped at 86.2%. The best TPR and TNR was logistic regression. The least accurate 
+was the decision tree classiﬁer. It was interesting to see that the true negative ratio wasn’t good for this 
+dataset/training set. The random forest did the worst for TNR. The worst TPR was also Random Forest 
+without age and sex features.
