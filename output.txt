@@ -1,0 +1,195 @@
+/Users/marisapaone/anaconda3/bin/python /Users/marisapaone/Documents/Comp Sci/CS677 Data Science/Term Project/term_project.py
+             Date    Year        Type  ... original order Unnamed: 21 Unnamed: 22
+0     31 Jul-2023  2023.0  Unprovoked  ...            NaN         NaN         NaN
+1     30 Jul-2023  2023.0  Unprovoked  ...            NaN         NaN         NaN
+2     24 Jul-2023  2023.0  Unprovoked  ...            NaN         NaN         NaN
+3     22 Jul-2023  2023.0  Unprovoked  ...            NaN         NaN         NaN
+4     21 Jul-2023  2023.0  Unprovoked  ...            NaN         NaN         NaN
+...           ...     ...         ...  ...            ...         ...         ...
+6905          NaN     NaN         NaN  ...            NaN         NaN         NaN
+6906          NaN     NaN         NaN  ...            NaN         NaN         NaN
+6907          NaN     NaN         NaN  ...            NaN         NaN         NaN
+6908          NaN     NaN         NaN  ...            NaN         NaN         NaN
+6909          NaN     NaN         NaN  ...            NaN         NaN         NaN
+
+[6910 rows x 23 columns]
+
+             Date    Year        Type  ... Fatal (Y/N)   Time         Species
+0     31 Jul-2023  2023.0  Unprovoked  ...           N  09h30              NaN
+1     30 Jul-2023  2023.0  Unprovoked  ...           N  15h30              NaN
+2     24 Jul-2023  2023.0  Unprovoked  ...           N  08h45      White shark
+3     22 Jul-2023  2023.0  Unprovoked  ...           N    NaN  Wobbegong shark
+4     21 Jul-2023  2023.0  Unprovoked  ...           N  13h20              NaN
+...           ...     ...         ...  ...         ...    ...              ...
+6874  Before 1911     0.0  Unprovoked  ...           N    NaN              NaN
+6875   Circa 1862     0.0  Unprovoked  ...           N    NaN              NaN
+6876  Before 1906     0.0  Unprovoked  ...           Y    NaN     Blue pointer
+6877  Before 1906     0.0  Unprovoked  ...           Y    NaN     Blue pointer
+6878  Before 1906     0.0  Unprovoked  ...           Y    NaN    Blue pointers
+
+[6879 rows x 13 columns]
+                 Date    Year        Type  ... Fatal (Y/N)     Time         Species
+0         31 Jul-2023  2023.0  Unprovoked  ...           N    09h30              NaN
+1         30 Jul-2023  2023.0  Unprovoked  ...           N    15h30              NaN
+2         24 Jul-2023  2023.0  Unprovoked  ...           N    08h45      White shark
+3         22 Jul-2023  2023.0  Unprovoked  ...           N      NaN  Wobbegong shark
+4         21 Jul-2023  2023.0  Unprovoked  ...           N    13h20              NaN
+...               ...     ...         ...  ...         ...      ...              ...
+6690      11-May-1817  1817.0  Unprovoked  ...           Y  Evening              NaN
+6719             1779  1779.0  Unprovoked  ...           Y      NaN              NaN
+6728             1749  1749.0  Unprovoked  ...           N      NaN              NaN
+6736      26-Mar-1703  1703.0  Unprovoked  ...           N    Night              NaN
+6753  Ca.789-1033 A.D  1000.0  Unprovoked  ...           N      NaN      Tiger shark
+
+[3219 rows x 13 columns]
+Fatal attacks recorded: 243
+Non Fatal attacks: 1205
+
+25 Most Frequent Shark Species/Sizes that Attack
+ ['White shark', "4' shark", 'Bull shark', "6' shark", 'Tiger shark', "4' to 5' shark", "3' shark", "5' shark", "3' to 4' shark", '2 m shark', '1.5 m shark', 'Wobbegong shark', "1.2 m [4'] shark", '3 m shark', "1.5 m [5'] shark", "2' to 3' shark", "1.2 m to 1.5 m [4' to 5'] shark", 'Blacktip shark', "6' to 8' shark", '"small shark"', ' ', 'blacktip or spinner shark', 'Bronze whaler shark', "1.8 m [6'] shark", "7' shark"]
+15 Most Frequent Shark Species/Sizes that Attack (after filtering data):
+ ['Unknown', 'White shark', 'Bull shark', 'Tiger shark', "4' shark", 'Blacktip shark', "6' shark", "4' to 5' shark", "3' shark", "5' shark", "3' to 4' shark", '2 m shark', '1.5 m shark', "1.2 m [4'] shark", 'Wobbegong shark']
+10 Most Frequent Activities that end in a Shark Attack
+ ['Surfing', 'Swimming', 'Diving', 'Spearfishing', 'Wading', 'Snorkeling', 'Standing', 'Body boarding', 'Fishing', 'Bathing']
+             Date    Year        Type  ...     Time         Species  Class
+0     31 Jul-2023  2023.0  Unprovoked  ...    09h30          Unknown     0
+2     24 Jul-2023  2023.0  Unprovoked  ...    08h45      White shark     0
+3     22 Jul-2023  2023.0  Unprovoked  ...      NaN  Wobbegong shark     0
+4     21 Jul-2023  2023.0  Unprovoked  ...    13h20          Unknown     0
+7     14 Jul-2023  2023.0  Unprovoked  ...    15h00          Unknown     0
+...           ...     ...         ...  ...      ...              ...   ...
+6612  31-Aug-1848  1848.0  Unprovoked  ...      NaN          Unknown     0
+6617  19-Jul-1847  1847.0  Unprovoked  ...      NaN          Unknown     1
+6637  13-Jul-1842  1842.0  Unprovoked  ...      NaN          Unknown     0
+6690  11-May-1817  1817.0  Unprovoked  ...  Evening          Unknown     1
+6736  26-Mar-1703  1703.0  Unprovoked  ...    Night          Unknown     0
+
+[1092 rows x 14 columns]
+
+Logistic Regression Accuracy: 0.8534798534798534
+[[438  33]
+ [ 47  28]]
+TPR =  0.9030927835051547
+TNR =  0.45901639344262296
+
+Naive Bayesian Accuracy: 0.836996336996337
+[[446  25]
+ [ 64  11]]
+TPR =  0.8745098039215686
+TNR =  0.3055555555555556
+
+Decision Tree Accuracy: 0.8058608058608059
+[[404  67]
+ [ 39  36]]
+TPR =  0.9119638826185101
+TNR =  0.34951456310679613
+
+Random Forest:
+    estimators  depth  error rate  accuracy
+0            1      1    0.137363  0.862637
+1            1      2    0.142857  0.857143
+2            1      3    0.150183  0.849817
+3            1      4    0.152015  0.847985
+4            1      5    0.139194  0.860806
+5            2      1    0.139194  0.860806
+6            2      2    0.137363  0.862637
+7            2      3    0.137363  0.862637
+8            2      4    0.137363  0.862637
+9            2      5    0.152015  0.847985
+10           3      1    0.141026  0.858974
+11           3      2    0.137363  0.862637
+12           3      3    0.137363  0.862637
+13           3      4    0.135531  0.864469
+14           3      5    0.150183  0.849817
+15           4      1    0.137363  0.862637
+16           4      2    0.135531  0.864469
+17           4      3    0.141026  0.858974
+18           4      4    0.137363  0.862637
+19           4      5    0.141026  0.858974
+20           5      1    0.137363  0.862637
+21           5      2    0.137363  0.862637
+22           5      3    0.137363  0.862637
+23           5      4    0.137363  0.862637
+24           5      5    0.142857  0.857143
+25           6      1    0.137363  0.862637
+26           6      2    0.137363  0.862637
+27           6      3    0.137363  0.862637
+28           6      4    0.137363  0.862637
+29           6      5    0.139194  0.860806
+30           7      1    0.137363  0.862637
+31           7      2    0.137363  0.862637
+32           7      3    0.137363  0.862637
+33           7      4    0.137363  0.862637
+34           7      5    0.137363  0.862637
+35           8      1    0.137363  0.862637
+36           8      2    0.137363  0.862637
+37           8      3    0.137363  0.862637
+38           8      4    0.137363  0.862637
+39           8      5    0.137363  0.862637
+40           9      1    0.137363  0.862637
+41           9      2    0.135531  0.864469
+42           9      3    0.137363  0.862637
+43           9      4    0.139194  0.860806
+44           9      5    0.137363  0.862637
+45          10      1    0.137363  0.862637
+46          10      2    0.137363  0.862637
+47          10      3    0.137363  0.862637
+48          10      4    0.137363  0.862637
+49          10      5    0.139194  0.860806
+Best Accuracy Row for Random Forest:
+     estimators  depth  error rate  accuracy
+13           3      4    0.135531  0.864469
+Lowest Error Row for Random Forest:
+     estimators  depth  error rate  accuracy
+13           3      4    0.135531  0.864469
+Confusion matrix for n = 3 and depth = 4
+ [[470   1]
+ [ 73   2]]
+TPR =  0.8655616942909761
+TNR =  0.6666666666666666
+
+Accuracy for kNN with k = 1 is: 0.7673992673992674
+[[396  75]
+ [ 52  23]]
+TPR =  0.8839285714285714
+TNR =  0.23469387755102042
+
+Accuracy for kNN with k = 2 is: 0.8424908424908425
+[[454  17]
+ [ 69   6]]
+TPR =  0.8680688336520076
+TNR =  0.2608695652173913
+
+Accuracy for kNN with k = 3 is: 0.8131868131868132
+[[434  37]
+ [ 65  10]]
+TPR =  0.8697394789579158
+TNR =  0.2127659574468085
+
+Accuracy for kNN with k = 4 is: 0.8516483516483516
+[[462   9]
+ [ 72   3]]
+TPR =  0.8651685393258427
+TNR =  0.25
+
+Accuracy for kNN with k = 5 is: 0.847985347985348
+[[459  12]
+ [ 71   4]]
+TPR =  0.8660377358490566
+TNR =  0.25
+
+15 Most Frequent Shark Attack Countries: ['USA', 'AUSTRALIA', 'SOUTH AFRICA', 'BRAZIL', 'BAHAMAS', 'REUNION', 'MEXICO', 'NEW CALEDONIA', 'NEW ZEALAND', 'EGYPT', 'FIJI', 'PAPUA NEW GUINEA', 'FRENCH POLYNESIA', 'ITALY', 'VIETNAM']
+
+15 Most Frequent Shark Attack Species: ['White shark', 'Bull shark', 'Tiger shark', "4' shark", 'Blacktip shark', "6' shark", "4' to 5' shark", "3' shark", "5' shark", "3' to 4' shark", '2 m shark', '1.5 m shark', "1.2 m [4'] shark", 'Wobbegong shark']
+
+10 Most Frequent Shark Attack Activies: ['Surfing', 'Swimming', 'Diving', 'Spearfishing', 'Wading', 'Snorkeling', 'Standing', 'Body boarding', 'Fishing', 'Bathing']
+
+8 Most Frequent Fatal Shark Species: ['Unknown', 'White shark', 'Tiger shark', 'Bull shark', "3.7 m [12'] shark", '2 m shark', "15' shark", '3 sharks']
+
+Accuracy for Random Forest without Age and Sex 0.8589743589743589
+[[469   2]
+ [ 75   0]]
+TPR =  0.8621323529411765
+TNR =  0.0
+
+Process finished with exit code 0
